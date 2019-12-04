@@ -1,0 +1,65 @@
+{
+	"python.jediEnabled": false,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "python.linting.lintOnSave": true,
+
+
+
+	"snippets.priority": 1000,
+    "coc.source.gocode.enable": true,
+    "coc.preferences.previewAutoClose": true,
+    "coc.preferences.formatOnSaveFiletypes": ["python"],
+    "coc.preferences.colorSupport": true,
+    "coc.preferences.formatOnType": true,
+    "coc.preferences.enableFloatHighlight": true,
+
+
+	"suggest.acceptSuggestionOnCommitCharacter": true,
+	"suggest.minTriggerInputLength": 2,
+	"suggest.snippetIndicator": "►",
+    "suggest.floatEnable": true,
+    "suggest.detailField":"abbr",
+    "suggest.enablePreview": true,
+    "suggest.echodocSupport": true,
+
+
+    "eslint.autoFixOnSave": true,
+    "eslint.packageManager": "npm",
+    "eslint.filetypes": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
+
+
+	"languageserver": {
+           "golang": {
+                  "command": "gopls",
+                  "args": [],
+                  "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+                  "filetypes": ["go"]
+                },
+			"ccls": {
+      			"command": "ccls",
+      			"filetypes": ["c", "cpp", "cuda", "objc", "objcpp", "arduino", "ino"],
+      			"rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+      			"initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        },
+        "clang": {
+          "resourceDir": "/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0",
+          "extraArgs": [
+            "-isystem",
+            "/Applications/Development/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1",
+            "-I",
+            "/Applications/Development/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/"        
+          ]
+        }
+      }    	}
+  	}
+}
+    
+
+

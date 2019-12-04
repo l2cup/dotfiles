@@ -1,0 +1,17 @@
+set cursorline
+set timeoutlen=500
+set ttimeoutlen=1
+set updatetime=100
+let mapleader=","
+
+
+set nu rnu
+
+nnoremap <Tab> :tabnext<CR>
+nnoremap <S-Tab> :tabprevious<CR>
+
+map <Leader>o :action ReformatCode<CR>
+map <Leader><Tab> :action CloseEditor<CR>
+
+
+
