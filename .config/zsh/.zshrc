@@ -1,6 +1,8 @@
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-eval $(thefuck --alias)
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"
+#
+
+eval "`fnm env --multi`"
 
 # Theme
 source /Users/uros/.config/zsh/.theme.zsh
@@ -17,23 +19,18 @@ typeset -g ENABLE_CORRECTION="true"
 typeset -g COMPLETION_WAITING_DOTS="true"
 
 plugins=(
-  extract
   git
   gitignore
-  iterm2
-  man
   z
   zsh_reload
   sudo
-  fzf
   pip
   vscode
-  xcode
   tmux
+  fzf
   brew
   osx
-  python
-  ripgrep
+  pyenv
   zsh-syntax-highlighting
   zsh-autosuggestions
 )

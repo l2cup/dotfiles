@@ -50,5 +50,6 @@ Plug 'rhysd/vim-clang-format'
 Plug 'bfrg/vim-glfw-syntax'
 Plug 'beyondmarc/opengl.vim'
 
-
+"Git plugin
+Plug 'tpope/vim-fugitive'
 call plug#end()

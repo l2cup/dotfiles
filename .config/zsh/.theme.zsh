@@ -1,5 +1,6 @@
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+
 unset -m 'POWERLEVEL9K_*'
 
 typeset -g POWERLEVEL9K_MODE="nerdfont-complete"
