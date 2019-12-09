@@ -52,4 +52,11 @@ Plug 'beyondmarc/opengl.vim'
 
 "Git plugin
 Plug 'tpope/vim-fugitive'
+
+"Local .vimrc for different project rules
+Plug 'embear/vim-localvimrc'
+
+"Plugin for tag lookup
+Plug 'liuchengxu/vista.vim'
+
 call plug#end()

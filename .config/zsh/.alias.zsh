@@ -8,7 +8,7 @@ alias mac_server='/Applications/IDA\ Pro\ 7.0/ida.app/Contents/MacOS/dbgsrv/mac_
 alias mac_server64='/Applications/IDA\ Pro\ 7.0/ida.app/Contents/MacOS/dbgsrv/mac_server64'
 alias ldm='ld macosx_version_min 10.14 -lSystem'
 alias fresh='go run $GOPATH/src/github.com/pilu/fresh/main.go'
-alias platformio='/Users/uros/.platformio/penv/bin/platformio'
+#alias platformio='/Users/uros/.platformio/penv/bin/platformio'
 alias tagsc='ctags -R --c++-kinds=+p --fields=+iaS --extras'
 alias grep='rg'
 

@@ -50,7 +50,7 @@ set shiftwidth=4
 "Javascript custom indendation where tab = 2 spaces for the Airbnb style guide
 autocmd FileType javascript,vue,html setlocal shiftwidth=2 tabstop=2
 "C custom indentation to comply to linux kernel rules and clang auto format
-autocmd FileType c,cpp,objc setlocal expandtab tabstop=8 shiftwidth=8 softtabstop=8 textwidth=80 cindent cinoptions=:0,l1,t0,g0,(0 colorcolumn=81
+autocmd FileType c,cpp,objc setlocal noexpandtab tabstop=8 shiftwidth=8 softtabstop=8 textwidth=80 cindent cinoptions=:0,l1,t0,g0,(0 colorcolumn=81
 autocmd FileType c,cpp,objc ClangFormatAutoEnable
 
 "Used only by c so not in themes
@@ -70,3 +70,19 @@ let g:netrw_browse_split = 4
 
 "Clang auto detect style file for kernel style file
 let g:clang_format#detect_style_file = 1
+
+"Local vimrc settings
+let g:localvimrc_reverse=1
+let g:localvimrc_persistent=1
+
+"Tagbar settings 
+let g:vista#renderer#enable_icon = 1
+let g:vista_cursor_delay = 50
+let g:vista_echo_cursor_strategy = 'floating_win'
+let g:vista_close_on_jump = 1
+let g:vista_default_executive ='ctags'
+let g:vista_executive_for = {
+  \ 'javascript': 'coc',
+  \ 'vue': 'coc',
+  \ 'python': 'coc',
+  \ }

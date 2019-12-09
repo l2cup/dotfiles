@@ -19,6 +19,15 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 
+"Self explanitory
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+nn <silent> K :call CocActionAsync('doHover')<cr>
+
+
+
 let g:coc_snippet_next = '<tab>'
 
 "Disable Arrow keys in Insert mode
@@ -35,3 +44,7 @@ map <right> <nop>
 "Javascript specific keymaps
 "
 autocmd Filetype javascript,vue nmap <leader>o :CocCommand eslint.executeAutofix<CR>
+
+"Vista keymap
+"
+nmap <Leader>v :Vista!!<CR>
