@@ -52,6 +52,7 @@ autocmd FileType javascript,vue,html setlocal shiftwidth=2 tabstop=2
 "C custom indentation to comply to linux kernel rules and clang auto format
 autocmd FileType c,cpp,objc setlocal noexpandtab tabstop=8 shiftwidth=8 softtabstop=8 textwidth=80 cindent cinoptions=:0,l1,t0,g0,(0 colorcolumn=81
 autocmd FileType c,cpp,objc ClangFormatAutoEnable
+autocmd Filetype c,cpp,objc nmap <Leader>o :ClangFormat<CR>
 
 "Used only by c so not in themes
 highlight ColorColumn ctermbg=Black ctermfg=DarkRed

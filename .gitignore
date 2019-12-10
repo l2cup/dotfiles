@@ -7,6 +7,7 @@
 
 !.tmux/
 .tmux/plugins/tpm
+.tmux/resurrect/
 !.tmux.conf
 
 !.config/
@@ -24,5 +25,6 @@
 .vim/plugged/*
 .vim/autoload/*
 .vim/.netrwhist
+
 
 

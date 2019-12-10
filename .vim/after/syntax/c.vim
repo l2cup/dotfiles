@@ -264,6 +264,7 @@ syn match cDelimiter    "[();\\]"
 " foldmethod=syntax fix, courtesy of Ivan Freitas
 syn match cBraces display "[{}]"
 
+syn match cType "\<[a-zA-Z_][a-zA-Z0-9_]*_[ft]\>" 
 
 " Booleans
 syn keyword cBoolean true false TRUE FALSE
