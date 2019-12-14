@@ -58,7 +58,7 @@ autocmd Filetype c,cpp,objc nmap <Leader>o :ClangFormat<CR>
 highlight ColorColumn ctermbg=Black ctermfg=DarkRed
 
 "Custom ctrlp ignores
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|__pycache__'
 
 "Python highlight configuration.
 let python_self_cls_highlight = 1
