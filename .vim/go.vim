@@ -33,8 +33,6 @@ autocmd Filetype go nmap <leader>r <Plug>(go-run)
 
 autocmd Filetype go nmap <leader>o <Plug>(go-imports)
 
-autocmd Filetype go nmap <leader><Space> <Plug>(go-def) 
-
 autocmd Filetype go nmap <leader>a :GoAlternate<CR>
 
 autocmd Filetype go nmap <leader>c :GoCoverageToggle<CR>

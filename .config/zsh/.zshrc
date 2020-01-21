@@ -4,6 +4,7 @@
 
 eval "`fnm env --multi`"
 
+
 # Theme
 source /Users/uros/.config/zsh/.theme.zsh
 

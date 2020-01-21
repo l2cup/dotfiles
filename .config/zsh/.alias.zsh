@@ -11,6 +11,8 @@ alias fresh='go run $GOPATH/src/github.com/pilu/fresh/main.go'
 #alias platformio='/Users/uros/.platformio/penv/bin/platformio'
 alias tagsc='ctags -R --c++-kinds=+p --fields=+iaS --extras'
 alias grep='rg'
+alias xcodegui='sudo xcode-select -s /Applications/Development/Xcode.app/Contents/Developer'
+alias xcodecli='sudo xcode-select --switch /Library/Developer/CommandLineTools'
 
 
 

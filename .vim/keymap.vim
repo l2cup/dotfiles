@@ -5,8 +5,8 @@ noremap <S-Tab> :bprevious<CR>
 noremap <Leader><Tab> :bdelete!<CR>
 noremap <Leader><S-Tab> :bunload<CR>
 
-nmap <silent><C-l> <C-w>l<C-w>_:vertical resize 88<CR>
-nmap <silent><C-h> <C-w>h<C-w>_:vertical resize 88<CR>
+nmap <silent><C-l> <C-w>l<C-w>_:vertical resize 87<CR>
+nmap <silent><C-h> <C-w>h<C-w>_:vertical resize 87<CR>
 nmap <C-j> <C-w>j<C-w>_
 nmap <C-k> <C-k>k<C-w>_
 
@@ -43,7 +43,7 @@ map <right> <nop>
 
 "Javascript specific keymaps
 "
-autocmd Filetype javascript,vue nmap <leader>o :CocCommand eslint.executeAutofix<CR>
+autocmd Filetype javascript,vue,typescript nmap <leader>o :CocCommand eslint.executeAutofix<CR>
 
 "Vista keymap
 "

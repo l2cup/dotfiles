@@ -28,6 +28,9 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 "Better python highlighting
 Plug 'kh3phr3n/python-syntax'
 
+"Django syntax highlight
+Plug 'tweekmonster/django-plus.vim'
+
 "Css color
 Plug 'ap/vim-css-color'
 
@@ -39,6 +42,9 @@ Plug 'honza/vim-snippets'
 
 "JavaScript
 Plug 'pangloss/vim-javascript'
+
+"Typescript
+Plug 'HerringtonDarkholme/yats.vim'
 
 "FileManager
 Plug 'tpope/vim-vinegar'

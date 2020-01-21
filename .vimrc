@@ -6,7 +6,12 @@ set number relativenumber
 set backspace=indent,eol,start
 set cursorline
 set noshowmode
+set hid
+set autoread
+set ignorecase
+set smartcase
 
+"set shellcmdflag=-ic
 
 "Faster escape sequence
 augroup FastEscape
@@ -48,7 +53,7 @@ set softtabstop=4
 set shiftwidth=4
 
 "Javascript custom indendation where tab = 2 spaces for the Airbnb style guide
-autocmd FileType javascript,vue,html setlocal shiftwidth=2 tabstop=2
+autocmd FileType javascript,vue,html,typescript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 "C custom indentation to comply to linux kernel rules and clang auto format
 autocmd FileType c,cpp,objc setlocal noexpandtab tabstop=8 shiftwidth=8 softtabstop=8 textwidth=80 cindent cinoptions=:0,l1,t0,g0,(0 colorcolumn=81
 autocmd FileType c,cpp,objc ClangFormatAutoEnable
@@ -58,7 +63,8 @@ autocmd Filetype c,cpp,objc nmap <Leader>o :ClangFormat<CR>
 highlight ColorColumn ctermbg=Black ctermfg=DarkRed
 
 "Custom ctrlp ignores
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|__pycache__'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|__pycache__'
+let g:ctrlp_use_caching = 0
 
 "Python highlight configuration.
 let python_self_cls_highlight = 1
@@ -67,7 +73,7 @@ let python_self_cls_highlight = 1
 let g:netrw_banner = 0
 let g:netrw_winsize = 25
 let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
+
 
 "Clang auto detect style file for kernel style file
 let g:clang_format#detect_style_file = 1
@@ -84,6 +90,7 @@ let g:vista_close_on_jump = 1
 let g:vista_default_executive ='ctags'
 let g:vista_executive_for = {
   \ 'javascript': 'coc',
+  \ 'typescript' : 'coc',
   \ 'vue': 'coc',
   \ 'python': 'coc',
   \ }
