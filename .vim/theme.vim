@@ -30,6 +30,7 @@ augroup nord-theme-overrides
     autocmd ColorScheme nord highlight typescriptUnaryOp ctermfg=4 guifg=#81A1C1
     autocmd ColorScheme nord highlight typescriptBinaryOp ctermfg=4 guifg=#81A1C1
     autocmd ColorScheme nord highlight typescriptTernary ctermfg=4 guifg=#81A1C1
+    autocmd ColorScheme nord highlight typescriptImport ctermfg=4 guifg=#81A1C1
 
     "#88C0D0
     autocmd ColorScheme nord highlight typescriptClassName ctermfg=6 guifg=#88C0D0

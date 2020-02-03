@@ -65,4 +65,7 @@ Plug 'embear/vim-localvimrc'
 "Plugin for tag lookup
 Plug 'liuchengxu/vista.vim'
 
+"Plugin for jsonc
+Plug 'neoclide/jsonc.vim'
+
 call plug#end()

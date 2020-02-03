@@ -10,6 +10,7 @@ set hid
 set autoread
 set ignorecase
 set smartcase
+set re=1
 
 "set shellcmdflag=-ic
 
@@ -54,6 +55,8 @@ set shiftwidth=4
 
 "Javascript custom indendation where tab = 2 spaces for the Airbnb style guide
 autocmd FileType javascript,vue,html,typescript setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
+
 "C custom indentation to comply to linux kernel rules and clang auto format
 autocmd FileType c,cpp,objc setlocal noexpandtab tabstop=8 shiftwidth=8 softtabstop=8 textwidth=80 cindent cinoptions=:0,l1,t0,g0,(0 colorcolumn=81
 autocmd FileType c,cpp,objc ClangFormatAutoEnable
@@ -63,7 +66,7 @@ autocmd Filetype c,cpp,objc nmap <Leader>o :ClangFormat<CR>
 highlight ColorColumn ctermbg=Black ctermfg=DarkRed
 
 "Custom ctrlp ignores
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|__pycache__'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|__pycache__\|dist'
 let g:ctrlp_use_caching = 0
 
 "Python highlight configuration.

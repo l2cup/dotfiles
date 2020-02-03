@@ -1,6 +1,7 @@
 export EDITOR=vim
 export ZSH="$HOME/.config/.oh-my-zsh"
 export ZDOTDIR="$HOME/.config/zsh"
+export HISTFILE="$HOME/.config/zsh/.zsh_history"
 export _Z_DATA="$HOME/.config/.z"
 export GOPATH="$HOME/Documents/Programming/go"
 export PATH=$PATH:$(go env GOPATH)/bin
@@ -13,3 +14,5 @@ export GNUPGHOME="$HOME/.applocations/.gnupg"
 export GRADLE_USER_HOME="$HOME/.applications/.gradle"
 export IDAUSR="$HOME/.applications/.idapro"
 export NUGET_PACKAGES="$HOME/.applications/.nuget/packages"
+export NODE_REPL_HISTORY=""
+export LESSHISTFILE=-
