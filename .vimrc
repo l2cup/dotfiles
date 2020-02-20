@@ -10,7 +10,6 @@ set hid
 set autoread
 set ignorecase
 set smartcase
-set re=1
 
 "set shellcmdflag=-ic
 
@@ -68,6 +67,8 @@ highlight ColorColumn ctermbg=Black ctermfg=DarkRed
 "Custom ctrlp ignores
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|__pycache__\|dist'
 let g:ctrlp_use_caching = 0
+
+let g:ctrlp_cmd='CtrlP :pwd'
 
 "Python highlight configuration.
 let python_self_cls_highlight = 1

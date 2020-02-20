@@ -31,14 +31,26 @@ augroup nord-theme-overrides
     autocmd ColorScheme nord highlight typescriptBinaryOp ctermfg=4 guifg=#81A1C1
     autocmd ColorScheme nord highlight typescriptTernary ctermfg=4 guifg=#81A1C1
     autocmd ColorScheme nord highlight typescriptImport ctermfg=4 guifg=#81A1C1
+    autocmd ColorScheme nord highlight typescriptExport ctermfg=4 guifg=#81A1C1
+    autocmd ColorScheme nord highlight typescriptExport ctermfg=4 guifg=#81A1C1
 
     "#88C0D0
     autocmd ColorScheme nord highlight typescriptClassName ctermfg=6 guifg=#88C0D0
     autocmd ColorScheme nord highlight typescriptFuncName ctermfg=6 guifg=#88C0D0
     autocmd ColorScheme nord highlight typescriptInterfaceName ctermfg=6 guifg=#88C0D0
     autocmd ColorScheme nord highlight typescriptFuncCall ctermfg=6 guifg=#88C0D0
+    autocmd ColorScheme nord highlight typescriptArrowFunc ctermfg=6 guifg=#88C0D0
+    autocmd ColorScheme nord highlight typescriptTypeReference ctermfg=6 guifg=#88C0D0
+    autocmd ColorScheme nord highlight typescriptType ctermfg=6 guifg=#88C0D0
+    autocmd ColorScheme nord highlight typescriptPredefinedType ctermfg=6 guifg=#88C0D0
+    autocmd ColorScheme nord highlight typescriptPrototype ctermfg=6 guifg=#88C0D0
+    autocmd ColorScheme nord highlight typescriptDocParamType ctermfg=6 guifg=#88C0D0
+    autocmd ColorScheme nord highlight typescriptDocNamedParamType ctermfg=6 guifg=#88C0D0
+    autocmd ColorScheme nord highlight typescriptGlobal ctermfg=6 guifg=#88C0D0
 
-
+    "#8FBCBB
+    "Here only for reference.
+    
     "#B48EAD
     autocmd ColorScheme nord highlight typescriptFuncArg ctermfg=015 guifg=#B48EAD
     autocmd ColorScheme nord highlight typescriptArrowFuncArg ctermfg=015 guifg=#B48EAD
@@ -52,6 +64,7 @@ augroup nord-theme-overrides
     autocmd ColorScheme nord highlight typescriptBraces ctermfg=white guifg=white
     autocmd ColorScheme nord highlight typescriptMember ctermfg=white guifg=white
     autocmd ColorScheme nord highlight typescriptFuncComma ctermfg=white guifg=white
+    autocmd ColorScheme nord highlight typescriptEndColons ctermfg=white guifg=white
 
     "Python
     autocmd ColorScheme nord highlight pythonSelf ctermfg=015 guifg=#EBCB8B

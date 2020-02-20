@@ -52,6 +52,9 @@ Plug 'tpope/vim-vinegar'
 "Clang format
 Plug 'rhysd/vim-clang-format'
 
+"Arm v7 syntax support
+Plug 'ARM9/arm-syntax-vim'
+
 "C improved glfw, opengl syntax
 Plug 'bfrg/vim-glfw-syntax'
 Plug 'beyondmarc/opengl.vim'
@@ -67,5 +70,8 @@ Plug 'liuchengxu/vista.vim'
 
 "Plugin for jsonc
 Plug 'neoclide/jsonc.vim'
+
+"Plug for toggling lopen
+Plug 'milkypostman/vim-togglelist'
 
 call plug#end()

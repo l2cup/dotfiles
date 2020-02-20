@@ -23,15 +23,23 @@
     "suggest.enablePreview": true,
     "suggest.echodocSupport": true,
 
+    "tsserver.enableJavascript": true,
 
     "eslint.autoFixOnSave": true,
-    "eslint.packageManager": "npm",
+    "eslint.packageManager": "yarn",
     "eslint.filetypes": [
-        "typescript",
-        "typescriptreact",
         "javascript",
         "javascriptreact",
-        "vue"
+        "vue",
+        "typescript",
+        "typescriptreact",
+
+    ],
+    "coc.preferences.rootPatterns": [
+        "tsconfig.json",
+        ".git",
+        ".hg",
+        ".projections.json"
     ],
 
     "html.filetypes": [
@@ -41,6 +49,7 @@
     ],
 
     "tsserver.npm": "/usr/local/bin/npm",
+    "javascript.validate.enable": false,
 
     "languageserver": {
         "golang": {

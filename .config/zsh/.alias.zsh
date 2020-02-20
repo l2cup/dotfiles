@@ -13,9 +13,3 @@ alias tagsc='ctags -R --c++-kinds=+p --fields=+iaS --extras'
 alias grep='rg'
 alias xcodegui='sudo xcode-select -s /Applications/Development/Xcode.app/Contents/Developer'
 alias xcodecli='sudo xcode-select --switch /Library/Developer/CommandLineTools'
-
-
-
-
-
-

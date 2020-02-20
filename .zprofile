@@ -1,3 +1,4 @@
+export LC_ALL=en_US.UTF-8
 export EDITOR=vim
 export ZSH="$HOME/.config/.oh-my-zsh"
 export ZDOTDIR="$HOME/.config/zsh"
@@ -8,6 +9,7 @@ export PATH=$PATH:$(go env GOPATH)/bin
 export PATH=$PATH:/Applications/Arduino.app/Contents/MacOS/Arduino
 export PATH=$PATH:~/.platformio/penv/bin
 export PATH=$PATH:/usr/local/opt/rabbitmq/sbin
+export PATH="/usr/local/sbin:$PATH"
 export CPATH=`xcrun --show-sdk-path`/usr/include
 export PYENV_ROOT="$HOME/.applications/.pyenv"
 export GNUPGHOME="$HOME/.applocations/.gnupg"

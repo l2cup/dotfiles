@@ -46,5 +46,7 @@ map <right> <nop>
 autocmd Filetype javascript,vue,typescript nmap <leader>o :CocCommand eslint.executeAutofix<CR>
 
 "Vista keymap
-"
 nmap <Leader>v :Vista!!<CR>
+
+"Toggle lopen keymap
+nmap <script> <silent> <leader>l :call ToggleLocationList()<CR>
