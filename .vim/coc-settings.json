@@ -3,6 +3,12 @@
     "python.linting.enabled": true,
     "python.formatting.provider": "black",
     "python.linting.lintOnSave": true,
+    "python.venvFolders": [
+        "./applications/.pyenv",
+        "envs",
+        ".direnv"
+    ],
+    "python.venvPath": "./applications/.pyenv",
 
 
 

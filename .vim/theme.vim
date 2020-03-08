@@ -3,7 +3,7 @@ set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
-let g:rainbow_conf = {  'ctermfgs':['red', 'green', 'blue'],'guifgs':[ '#A3BE8C',  '#EBCB8B', '#81A1C1', '#B48EAD', '#88C0D0', '#E5E9F0'], 'separately': { 'html': 0, 'javascript':0, 'htmldjango' : 0, 'typescript':0}}
+let g:rainbow_conf = {  'ctermfgs':['red', 'green', 'blue'],'guifgs':[ '#A3BE8C',  '#EBCB8B', '#81A1C1', '#B48EAD', '#88C0D0', '#E5E9F0'], 'separately': { 'html': 0, 'javascript':0, 'htmldjango' : 0, 'typescript':0, 'vue': 0}}
 
 
 
@@ -31,7 +31,6 @@ augroup nord-theme-overrides
     autocmd ColorScheme nord highlight typescriptBinaryOp ctermfg=4 guifg=#81A1C1
     autocmd ColorScheme nord highlight typescriptTernary ctermfg=4 guifg=#81A1C1
     autocmd ColorScheme nord highlight typescriptImport ctermfg=4 guifg=#81A1C1
-    autocmd ColorScheme nord highlight typescriptExport ctermfg=4 guifg=#81A1C1
     autocmd ColorScheme nord highlight typescriptExport ctermfg=4 guifg=#81A1C1
 
     "#88C0D0
@@ -73,10 +72,50 @@ augroup nord-theme-overrides
     autocmd ColorScheme nord highlight pythonFunctionVars ctermfg=015 guifg=#B48EAD
     autocmd ColorScheme nord highlight pythonClass ctermfg=6 guifg=#88C0D0
 
-    augroup END
+augroup END
+
+
+augroup gruvbox-theme-overrides
+    autocmd!
+
+    "#FB4934
+    autocmd ColorScheme gruvbox highlight typescriptTry ctermfg=9 guifg=#FB4934
+    autocmd ColorScheme gruvbox highlight typescriptExceptions ctermfg=9 guifg=#FB4934
+    autocmd ColorScheme gruvbox highlight typescriptIdentifier ctermfg=9 guifg=#FB4934
+    autocmd ColorScheme gruvbox highlight typescriptEnumKeyword ctermfg=9 guifg=#FB4934
+
+    "#B8BB26
+    autocmd ColorScheme gruvbox highlight typescriptFuncCall ctermfg=10 guifg=#B8BB26 gui=bold term=bold cterm=bold
+
+    "#8EC07C
+    autocmd ColorScheme gruvbox highlight typescriptImport ctermfg=14 guifg=#8EC07C
+    autocmd ColorScheme gruvbox highlight typescriptExport ctermfg=14 guifg=#8EC07C
+    autocmd ColorScheme gruvbox highlight typescriptVariable ctermfg=14 guifg=#8EC07C
+
+    "#FABD2F
+    autocmd ColorScheme gruvbox highlight typescriptType ctermfg=11 guifg=#FABD2F
+    autocmd ColorScheme gruvbox highlight typescriptPredefinedType ctermfg=11 guifg=#FABD2F
+    autocmd ColorScheme gruvbox highlight typescriptPrototype ctermfg=11 guifg=#FABD2F
+    autocmd ColorScheme gruvbox highlight typescriptTypeReference ctermfg=11 guifg=#FABD2F
+    autocmd ColorScheme gruvbox highlight typescriptGlobal ctermfg=11 guifg=#FABD2F
+
+    "#EBDBB2
+    autocmd ColorScheme gruvbox highlight typescriptConstructSignature ctermfg=0 guifg=#EBDBB2
+    autocmd ColorScheme gruvbox highlight typescriptTypeParameter ctermfg=0 guifg=#EBDBB2
+    autocmd ColorScheme gruvbox highlight typescriptOperator ctermfg=0 guifg=#EBDBB2
+
+    autocmd ColorScheme gruvbox highlight CocErrorSign ctermbg=235 guibg=#282828 ctermfg=167 guifg=#fb4934
+    autocmd ColorScheme gruvbox highlight CocInfoSign ctermbg=235 guibg=#282828 ctermfg=214 guifg=#fabd2f 
+    autocmd ColorScheme gruvbox highlight CocWarningSign ctermbg=235 guibg=#282828 ctermfg=208 guifg=#fe8019
+
+    
+
+
+augroup END
+
 
 "Actual theme for vim
-colorscheme nord
+colorscheme gruvbox
 
 "Cursor line no underline on line number
 hi CursorLineNr term=bold cterm=bold ctermfg=012 gui=bold
@@ -84,7 +123,3 @@ hi CursorLineNr term=bold cterm=bold ctermfg=012 gui=bold
 
 "Airline theme source
 source ~/.vim/theme.airline.vim
-
-
-
-

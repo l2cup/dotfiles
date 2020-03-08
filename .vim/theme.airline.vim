@@ -1,6 +1,7 @@
 "Themeing for airline
 
-let g:airline_theme='nord'
+let g:airline_theme='gruvbox'
+let g:airline_solarized_bg='dark'
 
 "Airline symbol checking
 if !exists('g:airline_symbols')
@@ -35,14 +36,3 @@ let g:airline#extensions#tabline#tab_nr_type = 1
 let g:airline#extensions#tabline#show_tab_type = 0
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
-
-function! MyStatusLine()
-  let port = arduino#GetPort()
-  let line = '%f [' . g:arduino_board . '] [' . g:arduino_programmer . ']'
-  if !empty(port)
-    let line = line . ' (' . port . ':' . g:arduino_serial_baud . ')'
-  endif
-  return line
-endfunction
-
-autocmd BufNewFile,BufRead *.ino let g:airline_section_x='%{MyStatusLine()}'

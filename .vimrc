@@ -2,14 +2,25 @@
 set nocompatible
 syntax on
 set encoding=UTF-8
-set number relativenumber
 set backspace=indent,eol,start
 set cursorline
 set noshowmode
+set rnu
 set hid
 set autoread
 set ignorecase
+set hlsearch
 set smartcase
+set gcr=a:blinkon0
+set incsearch
+set signcolumn=number
+set ttyfast
+set undodir=~/.vim/undo-dir
+set undofile
+set nuw=3
+set scrolloff=7
+set showmatch
+
 
 "set shellcmdflag=-ic
 
@@ -93,8 +104,13 @@ let g:vista_echo_cursor_strategy = 'floating_win'
 let g:vista_close_on_jump = 1
 let g:vista_default_executive ='ctags'
 let g:vista_executive_for = {
-  \ 'javascript': 'coc',
-  \ 'typescript' : 'coc',
-  \ 'vue': 'coc',
-  \ 'python': 'coc',
-  \ }
+            \ 'javascript': 'coc',
+            \ 'typescript' : 'coc',
+            \ 'vue': 'coc',
+            \ 'python': 'coc',
+            \ }
+
+let g:vim_vue_plugin_use_typescript = 1
+
+"Let vim ignore gcc warnings but not errors
+set errorformat^=%-G%f:%l:\ warning:%m

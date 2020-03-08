@@ -10,6 +10,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'arcticicestudio/nord-vim'
 
+Plug 'morhetz/gruvbox'
+
 "Rainbow Brackets
 Plug 'luochen1990/rainbow'
 
@@ -45,6 +47,9 @@ Plug 'pangloss/vim-javascript'
 
 "Typescript
 Plug 'HerringtonDarkholme/yats.vim'
+
+"Vue
+Plug 'leafoftree/vim-vue-plugin'
 
 "FileManager
 Plug 'tpope/vim-vinegar'
