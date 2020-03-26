@@ -17,6 +17,10 @@
 !.config/zsh
 .config/zsh/.zshrc.zwc
 !.config/htop
+!.config/yabai
+!.config/skhd
+
+!.scripts/
 
 !.gitignore
 

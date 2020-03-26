@@ -12,6 +12,7 @@ set smartcase
 set hlsearch
 set ttyfast
 set incsearch
+set hid
 
 nnoremap <Tab> :tabnext<CR>
 nnoremap <S-Tab> :tabprevious<CR>
@@ -22,3 +23,5 @@ map <Leader>v :action ActivateStructureToolWindow<CR>
 
 nnoremap <silent><C-l> <C-w>l<C-w>_
 nnoremap <silent><C-h> <C-w>h<C-w>_
+
+nnoremap <leader><tab>:close<CR>

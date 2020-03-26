@@ -61,6 +61,10 @@ map <right> <nop>
 "
 autocmd Filetype javascript,vue,typescript nmap <leader>o :CocCommand eslint.executeAutofix<CR>
 
+"Python specific keymaps
+autocmd Filetype python nmap <leader>r :!python3 %<CR>
+autocmd Filetype python nmap <leader>e :!python3 
+
 "Vista keymap
 nmap <Leader>v :Vista!!<CR>
 
