@@ -1,9 +1,4 @@
-#eval "$(pyenv init -)"
-#eval "$(pyenv virtualenv-init -)"
-#
-
 eval "`fnm env --multi`"
-
 
 # Theme
 source /Users/uros/.config/zsh/.theme.zsh
@@ -14,33 +9,26 @@ typeset -g ZSH_AUTOSUGGEST_USE_ASYNC=1
 typeset -g ZSH_DISABLE_COMPFIX=true
 # Faster key timeouts 
 typeset -g KEYTIMEOUT=1
-# Ask for correction enable
-typeset -g ENABLE_CORRECTION="true"
-# Completion dots when waiting for choice
-typeset -g COMPLETION_WAITING_DOTS="true"
+
+typeset -g DISABLE_AUTO_UPDATE=true
+
+typeset -g DISABLE_MAGIC_FUNCTIONS=true
 
 plugins=(
-  git
-  gitignore
-  z
-  zsh_reload
-  sudo
-  pip
-  vscode
-  tmux
-  fzf
-  brew
-  osx
-  pyenv
-  docker
-  docker-compose
-  zsh-syntax-highlighting
-  zsh-autosuggestions
-  vi-mode
+ git
+ gitignore
+ z
+ zsh_reload
+ tmux
+ fzf
+ zsh-syntax-highlighting
+ zsh-autosuggestions
+ vi-mode
 )
 # Aliases
 source /Users/uros/.config/zsh/.alias.zsh
 
+#TODO Move the oh-my-zsh leftovers to a custom zsh configuration with a plugin manager
 source $ZSH/oh-my-zsh.sh
 
 bindkey -M menuselect '^h' vi-backward-char

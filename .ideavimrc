@@ -1,0 +1,27 @@
+set cursorline
+set timeoutlen=100
+set ttimeoutlen=1
+set updatetime=100
+let mapleader=","
+
+
+set rnu
+set autoread
+set ignorecase
+set smartcase
+set hlsearch
+set ttyfast
+set incsearch
+set hid
+
+nnoremap <Tab> :tabnext<CR>
+nnoremap <S-Tab> :tabprevious<CR>
+
+map <Leader>o :action ReformatCode<CR>
+map <Leader><Tab> :action CloseEditor<CR>
+map <Leader>v :action ActivateStructureToolWindow<CR>
+
+nnoremap <silent><C-l> <C-w>l<C-w>_
+nnoremap <silent><C-h> <C-w>h<C-w>_
+
+nnoremap <leader><tab>:close<CR>

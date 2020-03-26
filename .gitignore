@@ -5,6 +5,8 @@
 
 !.zprofile
 
+!.ideavimrc
+
 !.tmux/
 .tmux/plugins/tpm
 .tmux/resurrect/
@@ -13,18 +15,23 @@
 !.config/
 .config/*
 !.config/zsh
+.config/zsh/.zshrc.zwc
 !.config/htop
+!.config/yabai
+!.config/skhd
+
+!.scripts/
 
 !.gitignore
 
 !.vimrc
 !.zshrc
-!.vim/
 .vim/coc
 .vim/.ccls-cache/*
 .vim/plugged/*
 .vim/autoload/*
 .vim/.netrwhist
+!.vim/undo-dir
 
 
 
