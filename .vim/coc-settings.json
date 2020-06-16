@@ -19,6 +19,7 @@
     "coc.preferences.colorSupport": true,
     "coc.preferences.formatOnType": true,
     "coc.preferences.enableFloatHighlight": true,
+    "pairs.disableLanguages": ["golang","go"],
 
 
     "suggest.acceptSuggestionOnCommitCharacter": true,

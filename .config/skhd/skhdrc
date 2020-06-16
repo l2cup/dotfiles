@@ -2,8 +2,8 @@
 cmd - return : ~/.scripts/iterm.sh
 cmd - r : ~/.scripts/ranger.sh
 cmd - g : ~/.scripts/gotop.sh
-cmd + shift - b: ~/.scripts/bat.sh
-cmd - b : open -a firefox
+cmd + shift - b: ~/.scripts/bin/bat
+shift + alt - w: ~/.scripts/bin/wttr
 
 ######## WINDOWS ########
 
@@ -88,6 +88,9 @@ shift + cmd - 9 : yabai -m space --focus 9
 
 # Turn gaps for current workspace
 shift + alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
+
+cmd - space : yabai -m space --layout $(yabai -m query --spaces --space | jq -r 'if .type == "bsp" then "float" else "bsp" end'); ~/.scripts/update_status_bar.sh
+
 
 ######## MISC ########
 

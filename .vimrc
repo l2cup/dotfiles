@@ -108,6 +108,7 @@ let g:vista_executive_for = {
             \ 'typescript' : 'coc',
             \ 'vue': 'coc',
             \ 'python': 'coc',
+            \ 'go': 'coc',
             \ }
 
 let g:vim_vue_plugin_use_typescript = 1

@@ -142,7 +142,7 @@ main()
         subtitle_parts+=("|" "${bat_cycles} cycles")
 
     [[ "${bat_state}" ]] && \
-        message_parts+=("Souce: ${bat_state}")
+        message_parts+=("Source: ${bat_state}")
 
     notify
 }

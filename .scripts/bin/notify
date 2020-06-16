@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+osa_script="display notification \"$1\" \
+                    with title \"$2\" \
+                    subtitle \"$3\""
+
+/usr/bin/env osascript <<< "${osa_script}"
+

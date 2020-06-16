@@ -3,7 +3,7 @@ set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
-let g:rainbow_conf = {  'ctermfgs':['red', 'green', 'blue'],'guifgs':[ '#A3BE8C',  '#EBCB8B', '#81A1C1', '#B48EAD', '#88C0D0', '#E5E9F0'], 'separately': { 'html': 0, 'javascript':0, 'htmldjango' : 0, 'typescript':0, 'vue': 0}}
+let g:rainbow_conf = {  'ctermfgs':['red', 'green', 'blue'],'guifgs':[ '#EBDBB2','#fbf1c7', '#bdae93'], 'separately': { 'html': 0, 'javascript':0, 'htmldjango' : 0, 'typescript':0, 'vue': 0, 'go':0}}
 
 
 
@@ -14,7 +14,7 @@ augroup nord-theme-overrides
     autocmd ColorScheme nord highlight jsArrowFuncArgs ctermfg=015 guifg=#B48EAD
     autocmd ColorScheme nord highlight jsTemplateBraces ctermfg=015 guifg=#EBCB8B
     autocmd ColorScheme nord highlight jsObjectKey ctermfg=015 guifg=#EBCB8B
-    autocmd ColorScheme nord highlight jsObjectShorthandProp ctermfg=015 guifg=#EBCB8B
+    autocmd ColorScheme nord highlight jsObjectShorthandProp ctermfg=015 guifg=#EBCB8B 
     autocmd ColorScheme nord highlight jsObjectKeyString ctermfg=015 guifg=#EBCB8B
     autocmd ColorScheme nord highlight jsFunctionKey ctermfg=015 guifg=#EBCB8B
     autocmd ColorScheme nord highlight jsObjectFuncName ctermfg=015 guifg=#EBCB8B
@@ -83,14 +83,12 @@ augroup gruvbox-theme-overrides
     autocmd ColorScheme gruvbox highlight typescriptExceptions ctermfg=9 guifg=#FB4934
     autocmd ColorScheme gruvbox highlight typescriptIdentifier ctermfg=9 guifg=#FB4934
     autocmd ColorScheme gruvbox highlight typescriptEnumKeyword ctermfg=9 guifg=#FB4934
+    autocmd ColorScheme gruvbox highlight typescriptImport ctermfg=9 guifg=#FB4934
+    autocmd ColorScheme gruvbox highlight typescriptExport ctermfg=9 guifg=#FB4934
+    autocmd ColorScheme gruvbox highlight typescriptVariable ctermfg=9 guifg=#FB4934
 
     "#B8BB26
     autocmd ColorScheme gruvbox highlight typescriptFuncCall ctermfg=10 guifg=#B8BB26 gui=bold term=bold cterm=bold
-
-    "#8EC07C
-    autocmd ColorScheme gruvbox highlight typescriptImport ctermfg=14 guifg=#8EC07C
-    autocmd ColorScheme gruvbox highlight typescriptExport ctermfg=14 guifg=#8EC07C
-    autocmd ColorScheme gruvbox highlight typescriptVariable ctermfg=14 guifg=#8EC07C
 
     "#FABD2F
     autocmd ColorScheme gruvbox highlight typescriptType ctermfg=11 guifg=#FABD2F
@@ -103,18 +101,27 @@ augroup gruvbox-theme-overrides
     autocmd ColorScheme gruvbox highlight typescriptConstructSignature ctermfg=0 guifg=#EBDBB2
     autocmd ColorScheme gruvbox highlight typescriptTypeParameter ctermfg=0 guifg=#EBDBB2
     autocmd ColorScheme gruvbox highlight typescriptOperator ctermfg=0 guifg=#EBDBB2
+    autocmd ColorScheme gruvbox highlight typescriptFuncArg ctermfg=0 guifg=#EBDBB2
+    autocmd ColorScheme gruvbox highlight typescriptArrowFuncArg ctermfg=0 guifg=#EBDBB2
+    autocmd ColorScheme gruvbox highlight typescriptFuncComma ctermfg=0 guifg=#EBDBB2
+    autocmd Filetype typescript highlight PreProc ctermfg=0 guifg=#EBDBB2
+    autocmd ColorScheme gruvbox highlight typescriptLabel ctermfg=0 guifg=#EBDBB2
 
-    autocmd ColorScheme gruvbox highlight CocErrorSign ctermbg=235 guibg=#282828 ctermfg=167 guifg=#fb4934
-    autocmd ColorScheme gruvbox highlight CocInfoSign ctermbg=235 guibg=#282828 ctermfg=214 guifg=#fabd2f 
-    autocmd ColorScheme gruvbox highlight CocWarningSign ctermbg=235 guibg=#282828 ctermfg=208 guifg=#fe8019
 
+    autocmd ColorScheme gruvbox highlight CocErrorSign ctermbg=235 guibg=#1d2021 ctermfg=167 guifg=#fb4934
+    autocmd ColorScheme gruvbox highlight CocInfoSign ctermbg=235 guibg=#1d2021 ctermfg=214 guifg=#fabd2f 
+    autocmd ColorScheme gruvbox highlight CocWarningSign ctermbg=235 guibg=#1d2021 ctermfg=208 guifg=#fe8019
     
-
 
 augroup END
 
 
 "Actual theme for vim
+"
+let g:gruvbox_invert_selection=0
+let g:gruvbox_contrast_dark="hard"
+let g:gruvbox_italic=1
+
 colorscheme gruvbox
 
 "Cursor line no underline on line number

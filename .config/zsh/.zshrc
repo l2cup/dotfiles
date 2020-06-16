@@ -2,6 +2,7 @@ eval "`fnm env --multi`"
 
 # Theme
 source /Users/uros/.config/zsh/.theme.zsh
+source /Users/uros/.config/zsh/.icons.zsh
 
 # Autocorret async usage enable
 typeset -g ZSH_AUTOSUGGEST_USE_ASYNC=1
@@ -24,6 +25,7 @@ plugins=(
  zsh-syntax-highlighting
  zsh-autosuggestions
  vi-mode
+ pyenv
 )
 # Aliases
 source /Users/uros/.config/zsh/.alias.zsh

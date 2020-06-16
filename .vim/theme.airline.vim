@@ -1,7 +1,6 @@
 "Themeing for airline
 
 let g:airline_theme='gruvbox'
-let g:airline_solarized_bg='dark'
 
 "Airline symbol checking
 if !exists('g:airline_symbols')

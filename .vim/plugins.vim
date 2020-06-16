@@ -8,8 +8,8 @@ Plug 'vim-airline/vim-airline'
 
 "Theme plugins
 Plug 'vim-airline/vim-airline-themes'
-Plug 'arcticicestudio/nord-vim'
 
+Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 
 "Rainbow Brackets
