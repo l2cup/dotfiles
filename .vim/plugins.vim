@@ -10,10 +10,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 Plug 'arcticicestudio/nord-vim'
+Plug 'ayu-theme/ayu-vim'
 Plug 'morhetz/gruvbox'
-
-"Rainbow Brackets
-Plug 'luochen1990/rainbow'
 
 "Icons for airline
 Plug 'ryanoasis/vim-devicons'
@@ -68,7 +66,7 @@ Plug 'beyondmarc/opengl.vim'
 Plug 'tpope/vim-fugitive'
 
 "Local .vimrc for different project rules
-Plug 'embear/vim-localvimrc'
+"Plug 'embear/vim-localvimrc'
 
 "Plugin for tag lookup
 Plug 'liuchengxu/vista.vim'

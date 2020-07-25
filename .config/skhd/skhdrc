@@ -88,8 +88,9 @@ shift + cmd - 9 : yabai -m space --focus 9
 
 # Turn gaps for current workspace
 shift + alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
+shift + cmd - g : yabai -m space --focus $(yabai -m query --spaces --space | jq -r 'if .index == 6 then 1 else 6 end')
 
-cmd - space : yabai -m space --layout $(yabai -m query --spaces --space | jq -r 'if .type == "bsp" then "float" else "bsp" end'); ~/.scripts/update_status_bar.sh
+cmd - space : yabai -m space --layout $(yabai -m query --spaces --space | jq -r 'if .type == "bsp" then "float" else "bsp" end');
 
 
 ######## MISC ########

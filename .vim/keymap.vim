@@ -67,6 +67,7 @@ autocmd Filetype python nmap <leader>e :!python3
 
 "Vista keymap
 nmap <Leader>v :Vista!!<CR>
+nmap <Leader>f :Lex<CR>
 
 "Toggle lopen keymap
 nmap <script> <silent> <leader>l :call ToggleLocationList()<CR>
@@ -106,3 +107,7 @@ endfunction
 nnoremap <expr> <c-d> ScrollPopUp(1) ? '<esc>' : '<c-d>'
 nnoremap <expr> <c-u> ScrollPopUp(0) ? '<esc>' : '<c-u>'
 
+"Fugitive Keymapings
+nmap <Leader>gs :Gstatus<CR>
+nmap <Leader>gb :Gblame<CR>
+nmap <Leader>gd :Gdiff<CR>

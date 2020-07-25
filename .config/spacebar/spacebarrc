@@ -1,0 +1,25 @@
+#!/bin/zsh
+
+#spacebar -m config text_font         "Helvetica Neue:Regular:14.0"
+spacebar -m config text_font         "SauceCodePro Nrd Font:Medium:15.0"
+spacebar -m config icon_font         "SauceCodePro Nerd Font:Regular:18.0"
+
+# Gruvbox
+#spacebar -m config background_color  0xFF1d2021
+#spacebar -m config foreground_color  0xffebdbb2
+#spacebar -m config space_icon_color  0xffb8bb26
+
+#Nord
+spacebar -m config background_color  0xFF2E3440
+spacebar -m config foreground_color  0xffECEFF4
+spacebar -m config space_icon_color  0xffA3BE8C
+spacebar -m config power_icon_color  0xffEBCB8B
+spacebar -m config clock_icon_color  0xffD8DEE9
+
+spacebar -m config space_icon_strip     﫯 ﬓ ﱨ
+spacebar -m config power_icon_strip   
+spacebar -m config space_icon        
+spacebar -m config clock_icon        ""
+spacebar -m config clock_format      "%R"
+
+echo "spacebar configuration loaded.."

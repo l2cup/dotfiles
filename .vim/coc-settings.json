@@ -13,7 +13,7 @@
 
 
     "snippets.priority": 1000,
-    "coc.source.gocode.enable": true,
+    "coc.source.gocode.enable": false,
     "coc.preferences.previewAutoClose": true,
     "coc.preferences.formatOnSaveFiletypes": ["python"],
     "coc.preferences.colorSupport": true,
@@ -61,9 +61,11 @@
     "languageserver": {
         "golang": {
             "command": "gopls",
-            "args": [],
-            "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
-            "filetypes": ["go"]
+            "args": ["-remote=auto"],
+            "rootPatterns": ["go.mod", ".git"],
+            "filetypes": ["go"],
+            "initializationOptions": {
+            }
         },
         "ccls": {
             "command": "ccls",

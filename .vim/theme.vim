@@ -3,9 +3,6 @@ set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
-let g:rainbow_conf = {  'ctermfgs':['red', 'green', 'blue'],'guifgs':[ '#EBDBB2','#fbf1c7', '#bdae93'], 'separately': { 'html': 0, 'javascript':0, 'htmldjango' : 0, 'typescript':0, 'vue': 0, 'go':0}}
-
-
 
 augroup nord-theme-overrides
     autocmd!
@@ -116,13 +113,20 @@ augroup gruvbox-theme-overrides
 augroup END
 
 
-"Actual theme for vim
-"
+" Gruvbox
 let g:gruvbox_invert_selection=0
 let g:gruvbox_contrast_dark="hard"
 let g:gruvbox_italic=1
 
-colorscheme gruvbox
+" Nord
+let g:nord_underline=1
+let g:nord_bold=1
+let g:nord_italic_comments = 1
+let g:nord_cursor_line_number_background = 1
+
+
+"Actual theme for vim
+colorscheme nord
 
 "Cursor line no underline on line number
 hi CursorLineNr term=bold cterm=bold ctermfg=012 gui=bold

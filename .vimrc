@@ -20,6 +20,9 @@ set undofile
 set nuw=3
 set scrolloff=7
 set showmatch
+set diffopt+=context:2,iwhite
+set wildmenu
+set wildmode=full
 
 
 "set shellcmdflag=-ic

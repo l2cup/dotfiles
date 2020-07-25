@@ -18,6 +18,7 @@
 .config/zsh/.zshrc.zwc
 !.config/htop
 !.config/yabai
+!.config/spacebar
 !.config/skhd
 !.config/gotop
 

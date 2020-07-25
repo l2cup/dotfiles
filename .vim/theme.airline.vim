@@ -1,6 +1,6 @@
 "Themeing for airline
 
-let g:airline_theme='gruvbox'
+"let g:airline_theme='gruvbox'
 
 "Airline symbol checking
 if !exists('g:airline_symbols')
@@ -26,7 +26,7 @@ let g:airline_symbols.whitespace = 'Ξ'
 let g:airline_symbols.space = "\ua0"
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = '☰'
+let g:airline_symbols.linenr = '☰ '
 let g:airline_symbols.maxlinenr = ''
 
 "Tabline, airline keeps tabs.
