@@ -31,8 +31,12 @@ endfunction
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-"Enter for autocompletion
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+if exists('*complete_info')
+  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+else
+  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+endif
+
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 
 "Self explanitory
@@ -42,9 +46,10 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nn <silent> K :call CocActionAsync('doHover')<cr>
 
-
-
+autocmd CursorHold * silent call CocActionAsync('highlight')
 let g:coc_snippet_next = '<tab>'
+
+nmap <silent> <C-p> :Files<CR>
 
 "Disable Arrow keys in Insert mode
 imap <up> <nop>
@@ -104,8 +109,10 @@ function ScrollPopUp(down)
     return 1
 endfunction
 
-nnoremap <expr> <c-d> ScrollPopUp(1) ? '<esc>' : '<c-d>'
-nnoremap <expr> <c-u> ScrollPopUp(0) ? '<esc>' : '<c-u>'
+if !has('nvim')
+    nnoremap <expr> <c-d> ScrollPopUp(1) ? '<esc>' : '<c-d>'
+    nnoremap <expr> <c-u> ScrollPopUp(0) ? '<esc>' : '<c-u>'
+endif
 
 "Fugitive Keymapings
 nmap <Leader>gs :Gstatus<CR>

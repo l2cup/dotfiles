@@ -10,7 +10,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 Plug 'arcticicestudio/nord-vim'
-Plug 'ayu-theme/ayu-vim'
 Plug 'morhetz/gruvbox'
 
 "Icons for airline
@@ -35,7 +34,10 @@ Plug 'tweekmonster/django-plus.vim'
 Plug 'ap/vim-css-color'
 
 "Ctrl-P for GoDecl
-Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'ctrlpvim/ctrlp.vim'
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 "Snippets
 Plug 'honza/vim-snippets'
@@ -68,6 +70,15 @@ Plug 'tpope/vim-fugitive'
 "Local .vimrc for different project rules
 "Plug 'embear/vim-localvimrc'
 
+"Always in root directory
+Plug 'airblade/vim-rooter'
+
+" Surround 
+Plug 'tpope/vim-surround'
+
+"More text targets
+Plug 'wellle/targets.vim'
+
 "Plugin for tag lookup
 Plug 'liuchengxu/vista.vim'
 
@@ -76,5 +87,19 @@ Plug 'neoclide/jsonc.vim'
 
 "Plug for toggling lopen
 Plug 'milkypostman/vim-togglelist'
+
+"Editorconfig
+Plug 'editorconfig/editorconfig-vim'
+
+"Camelcase motions
+Plug 'bkad/camelcasemotion'
+
+"Action menu 
+if has('nvim')
+  Plug 'kizza/actionmenu.nvim'
+endif
+
+"Register view
+Plug 'junegunn/vim-peekaboo'
 
 call plug#end()

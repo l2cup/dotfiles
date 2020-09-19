@@ -1,5 +1,6 @@
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+export BAT_THEME="Nord"
 
 unset -m 'POWERLEVEL9K_*'
 

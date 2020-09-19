@@ -1,92 +1,93 @@
 {
-    "python.jediEnabled": false,
-    "python.linting.enabled": true,
-    "python.formatting.provider": "black",
-    "python.linting.lintOnSave": true,
-    "python.venvFolders": [
-        "./applications/.pyenv",
-        "envs",
-        ".direnv"
-    ],
-    "python.venvPath": "./applications/.pyenv",
+	"python.jediEnabled": false,
+	"python.linting.enabled": true,
+	"python.formatting.provider": "black",
+	"python.linting.lintOnSave": true,
+	"python.venvFolders": [
+		"./applications/.pyenv",
+		"envs",
+		".direnv"
+	],
+	"python.venvPath": "./applications/.pyenv",
 
 
 
-    "snippets.priority": 1000,
-    "coc.source.gocode.enable": false,
-    "coc.preferences.previewAutoClose": true,
-    "coc.preferences.formatOnSaveFiletypes": ["python"],
-    "coc.preferences.colorSupport": true,
-    "coc.preferences.formatOnType": true,
-    "coc.preferences.enableFloatHighlight": true,
-    "pairs.disableLanguages": ["golang","go"],
+	"snippets.priority": 1000,
+	"coc.source.gocode.enable": false,
+	"coc.preferences.previewAutoClose": true,
+	"coc.preferences.formatOnSaveFiletypes": ["python"],
+	"coc.preferences.colorSupport": true,
+	"coc.preferences.formatOnType": true,
+	"coc.preferences.enableFloatHighlight": true,
+	"pairs.disableLanguages": ["golang","go"],
 
 
-    "suggest.acceptSuggestionOnCommitCharacter": true,
-    "suggest.minTriggerInputLength": 2,
-    "suggest.snippetIndicator": " ►",
-    "suggest.floatEnable": true,
-    "suggest.detailField":"abbr",
-    "suggest.enablePreview": true,
-    "suggest.echodocSupport": true,
+	"suggest.acceptSuggestionOnCommitCharacter": true,
+	"suggest.minTriggerInputLength": 1,
+	"suggest.snippetIndicator": " ►",
+	"suggest.floatEnable": true,
+	"coc.preferences.hoverTarget": "float",
+	"suggest.detailField":"abbr",
+	"suggest.enablePreview": true,
+	"suggest.echodocSupport": true,
 
-    "tsserver.enableJavascript": true,
+	"tsserver.enableJavascript": true,
 
-    "eslint.autoFixOnSave": true,
-    "eslint.packageManager": "yarn",
-    "eslint.filetypes": [
-        "javascript",
-        "javascriptreact",
-        "vue",
-        "typescript",
-        "typescriptreact",
+	"eslint.autoFixOnSave": true,
+	"eslint.packageManager": "yarn",
+	"eslint.filetypes": [
+		"javascript",
+		"javascriptreact",
+		"vue",
+		"typescript",
+		"typescriptreact",
 
-    ],
-    "coc.preferences.rootPatterns": [
-        "tsconfig.json",
-        ".git",
-        ".hg",
-        ".projections.json"
-    ],
+	],
+	"coc.preferences.rootPatterns": [
+		"tsconfig.json",
+		".git",
+		".hg",
+		".projections.json"
+	],
 
-    "html.filetypes": [
-        "html",
-        "handlebars",
-        "htmldjango"
-    ],
+	"html.filetypes": [
+		"html",
+		"handlebars",
+		"htmldjango"
+	],
 
-    "tsserver.npm": "/usr/local/bin/npm",
-    "javascript.validate.enable": false,
+	"tsserver.npm": "/usr/local/bin/npm",
+	"javascript.validate.enable": false,
 
-    "languageserver": {
-        "golang": {
-            "command": "gopls",
-            "args": ["-remote=auto"],
-            "rootPatterns": ["go.mod", ".git"],
-            "filetypes": ["go"],
-            "initializationOptions": {
-            }
-        },
-        "ccls": {
-            "command": "ccls",
-            "filetypes": ["c", "cpp", "cuda", "objc", "objcpp", "arduino", "ino"],
-            "rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
-            "initializationOptions": {
-                "cache": {
-                    "directory": "/tmp/ccls"
-                },
-                "clang": {
-                    "resourceDir": "/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0",
-                    "extraArgs": [
-                        "-isystem",
-                        "/Applications/Development/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1",
-                        "-I",
-                        "/Applications/Development/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/"        
-                    ]
-                }
-            }
-        }
-    }
+	"languageserver": {
+		"golang": {
+			"command": "gopls",
+			"args": ["-remote=auto"],
+			"rootPatterns": ["go.mod", ".git"],
+			"filetypes": ["go"],
+			"initializationOptions": {
+			}
+		},
+		"ccls": {
+			"command": "ccls",
+			"filetypes": ["c", "cpp", "cuda", "objc", "objcpp", "arduino", "ino"],
+			"rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+			"initializationOptions": {
+				"cache": {
+					"directory": "/tmp/ccls"
+				},
+				"clang": {
+					"resourceDir": "/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0",
+					"extraArgs": [
+						"-isystem",
+						"/Applications/Development/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1",
+						"-I",
+						"/Applications/Development/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/"        
+					]
+				}
+			}
+		}
+	}
 }
 
 

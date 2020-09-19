@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 #spacebar -m config text_font         "Helvetica Neue:Regular:14.0"
-spacebar -m config text_font         "SauceCodePro Nrd Font:Medium:15.0"
+spacebar -m config text_font         "SauceCodePro Nerd Font:Medium:15.0"
 spacebar -m config icon_font         "SauceCodePro Nerd Font:Regular:18.0"
 
 # Gruvbox

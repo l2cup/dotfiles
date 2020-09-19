@@ -1,8 +1,8 @@
 # Scripts
-cmd - return : ~/.scripts/iterm.sh
+cmd - return : open -na alacritty
 cmd - r : ~/.scripts/ranger.sh
-cmd - g : ~/.scripts/gotop.sh
-cmd + shift - b: ~/.scripts/bin/bat
+cmd - g : open -na alacritty --args -e btm -C /Users/uros/.config/bottom/custom.toml
+cmd + shift - b: ~/.scripts/bin/battery
 shift + alt - w: ~/.scripts/bin/wttr
 
 ######## WINDOWS ########

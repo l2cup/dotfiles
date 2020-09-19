@@ -21,6 +21,11 @@
 !.config/spacebar
 !.config/skhd
 !.config/gotop
+!.config/nvim
+.config/nvim/coc-settings.json
+!.config/ripgrep
+!.config/bat
+!.config/alacritty
 
 !.scripts/
 
