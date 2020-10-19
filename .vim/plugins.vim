@@ -23,6 +23,7 @@ Plug 'jiangmiao/auto-pairs'
 
 "Golang support
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' } 
+Plug 'Coornail/vim-go-conceal', {'for': 'go'}
 
 "Better python highlighting
 Plug 'kh3phr3n/python-syntax'
@@ -93,6 +94,10 @@ Plug 'editorconfig/editorconfig-vim'
 
 "Camelcase motions
 Plug 'bkad/camelcasemotion'
+
+"Better white space
+Plug 'ntpeters/vim-better-whitespace'
+
 
 "Action menu 
 if has('nvim')

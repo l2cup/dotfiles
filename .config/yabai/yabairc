@@ -15,14 +15,14 @@ yabai -m config window_border_width          2
 
 
 # Gruvbox
-#yabai -m config active_window_border_color   0xffb8bb26
-#yabai -m config normal_window_border_color   0xffa89984
+yabai -m config active_window_border_color   0xffb8bb26
+yabai -m config normal_window_border_color   0xffa89984
 
 # Nord
-yabai -m config active_window_border_color   0xffebcb8b
-yabai -m config normal_window_border_color   0xff2E3440
+#yabai -m config active_window_border_color   0xffebcb8b
+#yabai -m config normal_window_border_color   0xff2E3440
 
-
+yabai -m config --space 3 layout stack
 
 yabai -m config active_window_opacity        1.0
 yabai -m config normal_window_opacity        1.0
@@ -34,8 +34,8 @@ yabai -m config auto_balance                 on
 yabai -m config layout                       bsp
 yabai -m config top_padding                  27
 yabai -m config bottom_padding               3
-yabai -m config left_padding                 3
-yabai -m config right_padding                3
+yabai -m config left_padding                 7
+yabai -m config right_padding                7
 yabai -m config window_gap                   3
 
 yabai -m config mouse_modifier               fn
@@ -45,19 +45,23 @@ yabai -m config mouse_action2                resize
 
 # Application rules
 yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^Firefox$" space=2
+yabai -m rule --add app="^Safari$" space=9
 yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)$" manage=off
 yabai -m rule --add label="System Preferences" app="^System Preferences$" manage=off
 yabai -m rule --add app="^App Store$" manage=off
 yabai -m rule --add app="^Activity Monitor$" manage=off
 yabai -m rule --add app="^Code$" space=3
 yabai -m rule --add app="^Android Studio$" space=3
-yabai -m rule --add app="^Spark$" space=4
-yabai -m rule --add app="^Mail$" space=4
+yabai -m rule --add app="^Spark$" space=8
+yabai -m rule --add app="^Mail$" space=8
+yabai -m rule --add app="^Music$" space=7
 yabai -m rule --add app="^Transmission$" space=5
 yabai -m rule --add app="^Discord$" space=5
-yabai -m rule --add app="^Slack$" space=5
+yabai -m rule --add app="^Slack$" space=4
 yabai -m rule --add title="^wttr$" manage=off
 yabai -m rule --add title="^JetBrains Toolbox$" manage=off
+yabai -m rule --add app="^GoLand$" space=3
 yabai -m rule --add title="^pinentry-mac$" manage=off
 yabai -m rule --add title="^gotop$" space=6
 

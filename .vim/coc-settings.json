@@ -31,6 +31,8 @@
 	"suggest.enablePreview": true,
 	"suggest.echodocSupport": true,
 
+	"yaml.format.enable": true,
+	
 	"tsserver.enableJavascript": true,
 
 	"eslint.autoFixOnSave": true,

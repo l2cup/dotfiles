@@ -26,13 +26,16 @@ plugins=(
  zsh-autosuggestions
  vi-mode
  pyenv
+ colored-man-pages
 )
 # Aliases
-source /Users/uros/.config/zsh/.alias.zsh
 
 #TODO Move the oh-my-zsh leftovers to a custom zsh configuration with a plugin manager
 source $ZSH/oh-my-zsh.sh
+
 eval $(gdircolors ~/.dir_colors)
+
+source /Users/uros/.config/zsh/.alias.zsh
 
 bindkey -M menuselect '^h' vi-backward-char
 bindkey -M menuselect '^k' vi-up-line-or-history
@@ -45,3 +48,6 @@ if [ -n "${NVIM_LISTEN_ADDRESS+x}" ]; then
   export COLORTERM="truecolor"
 fi
 
+if [[ -r "/usr/local/opt/mcfly/mcfly.zsh" ]]; then
+  source "/usr/local/opt/mcfly/mcfly.zsh"
+fi

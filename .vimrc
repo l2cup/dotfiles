@@ -5,6 +5,7 @@ set encoding=UTF-8
 set backspace=indent,eol,start
 set cursorline
 set noshowmode
+set background=dark
 set rnu
 set hid
 set autoread
@@ -25,6 +26,7 @@ set wildmenu
 set wildmode=full
 set guicursor=
 set mouse=a
+set clipboard=unnamedplus
 
 if has('nvim')
     set wildoptions+=pum
@@ -81,6 +83,9 @@ autocmd FileType c,cpp,objc setlocal noexpandtab tabstop=8 shiftwidth=8 softtabs
 autocmd FileType c,cpp,objc ClangFormatAutoEnable
 autocmd Filetype c,cpp,objc nmap <Leader>o :ClangFormat<CR>
 
+"Yaml cusotm indentation
+autocmd FileType yaml,yml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentkeys-=<:> foldmethod=indent nofoldenable
+
 "Used only by c so not in themes
 highlight ColorColumn ctermbg=Black ctermfg=DarkRed
 
@@ -127,6 +132,9 @@ let g:vista_executive_for = {
             \ }
 
 let g:vim_vue_plugin_use_typescript = 1
+
+let g:better_whitespace_enabled=1
+let g:strip_whitespace_on_save=1
 
 "Let vim ignore gcc warnings but not errors
 set errorformat^=%-G%f:%l:\ warning:%m
