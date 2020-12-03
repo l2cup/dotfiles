@@ -1,14 +1,14 @@
 eval "`fnm env --multi`"
 
 # Theme
-source /Users/uros/.config/zsh/.theme.zsh
-source /Users/uros/.config/zsh/.icons.zsh
+source $HOME/.config/zsh/.theme.zsh
+source $HOME/.config/zsh/.icons.zsh
 
 # Autocorret async usage enable
 typeset -g ZSH_AUTOSUGGEST_USE_ASYNC=1
 
 typeset -g ZSH_DISABLE_COMPFIX=true
-# Faster key timeouts 
+# Faster key timeouts
 typeset -g KEYTIMEOUT=1
 
 typeset -g DISABLE_AUTO_UPDATE=true
@@ -31,6 +31,7 @@ plugins=(
 # Aliases
 
 #TODO Move the oh-my-zsh leftovers to a custom zsh configuration with a plugin manager
+source $HOME/.config/zsh/.theme.zsh
 source $ZSH/oh-my-zsh.sh
 
 eval $(gdircolors ~/.dir_colors)

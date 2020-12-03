@@ -26,6 +26,7 @@
 !.config/ripgrep
 !.config/bat
 !.config/alacritty
+!.config/.oh-my-zsh
 
 !.scripts/
 

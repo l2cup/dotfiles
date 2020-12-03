@@ -75,7 +75,7 @@ set softtabstop=4
 set shiftwidth=4
 
 "Javascript custom indendation where tab = 2 spaces for the Airbnb style guide
-autocmd FileType javascript,vue,html,typescript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2 
+"autocmd FileType javascript,vue,html,typescript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
 
 "C custom indentation to comply to linux kernel rules and clang auto format
@@ -117,7 +117,7 @@ let g:clang_format#detect_style_file = 1
 let g:localvimrc_reverse=1
 let g:localvimrc_persistent=1
 
-"Tagbar settings 
+"Tagbar settings
 let g:vista#renderer#enable_icon = 1
 let g:vista_cursor_delay = 50
 let g:vista_echo_cursor_strategy = 'floating_win'
