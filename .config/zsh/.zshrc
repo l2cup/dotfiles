@@ -36,7 +36,8 @@ source $ZSH/oh-my-zsh.sh
 
 eval $(gdircolors ~/.dir_colors)
 
-source /Users/uros/.config/zsh/.alias.zsh
+source $HOME/.config/zsh/.alias.zsh
+source $HOME/.config/zsh/zsh-autoenv/autoenv.zsh
 
 bindkey -M menuselect '^h' vi-backward-char
 bindkey -M menuselect '^k' vi-up-line-or-history
@@ -52,3 +53,5 @@ fi
 if [[ -r "/usr/local/opt/mcfly/mcfly.zsh" ]]; then
   source "/usr/local/opt/mcfly/mcfly.zsh"
 fi
+
+eval "$(mcfly init zsh)"

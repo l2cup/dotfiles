@@ -62,13 +62,15 @@ map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+
 "Javascript specific keymaps
 "
 autocmd Filetype javascript,vue,typescript nmap <leader>o :CocCommand eslint.executeAutofix<CR>
 
 "Python specific keymaps
 autocmd Filetype python nmap <leader>r :!python3 %<CR>
-autocmd Filetype python nmap <leader>e :!python3 
+autocmd Filetype python nmap <leader>e :!python3
 
 "Vista keymap
 nmap <Leader>v :Vista!!<CR>
@@ -79,7 +81,7 @@ nmap <script> <silent> <leader>l :call ToggleLocationList()<CR>
 
 "<S-k> documentation scroll. Works in normal mode.
 "TODO Allow no mouse scrolling in insert mode documentation.
-function FindCursorPopUp()                                                                                                                                                                                            
+function FindCursorPopUp()
     let radius = get(a:000, 0, 2)
     let srow = screenrow()
     let scol = screencol()

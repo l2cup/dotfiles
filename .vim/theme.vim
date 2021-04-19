@@ -114,7 +114,7 @@ augroup gruvbox-theme-overrides
 augroup END
 
 
-" Gruvbox
+"Gruvbox
 let g:gruvbox_invert_selection=0
 let g:gruvbox_contrast_dark="medium"
 let g:gruvbox_italic=1
@@ -125,6 +125,7 @@ let g:gruvbox_italic=1
 "let g:nord_italic_comments = 1
 "let g:nord_cursor_line_number_background = 1
 
+"let g:neodark#background = '#202020'
 
 "Actual theme for vim
 colorscheme gruvbox

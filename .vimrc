@@ -27,6 +27,7 @@ set wildmode=full
 set guicursor=
 set mouse=a
 set clipboard=unnamedplus
+set ve+=onemore
 
 if has('nvim')
     set wildoptions+=pum
@@ -118,6 +119,7 @@ let g:localvimrc_reverse=1
 let g:localvimrc_persistent=1
 
 "Tagbar settings
+let g:vista_sidebar_width=60
 let g:vista#renderer#enable_icon = 1
 let g:vista_cursor_delay = 50
 let g:vista_echo_cursor_strategy = 'floating_win'

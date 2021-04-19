@@ -16,6 +16,7 @@
 .config/*
 !.config/zsh
 .config/zsh/.zshrc.zwc
+.config/zsh/.zsh_sessions/
 !.config/htop
 !.config/yabai
 !.config/spacebar

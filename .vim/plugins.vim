@@ -11,6 +11,8 @@ Plug 'vim-airline/vim-airline-themes'
 
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
+Plug 'sonph/onehalf', {'rtp': 'vim'}
+Plug 'KeitaNakamura/neodark.vim'
 
 "Icons for airline
 Plug 'ryanoasis/vim-devicons'
@@ -22,7 +24,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 
 "Golang support
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' } 
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'Coornail/vim-go-conceal', {'for': 'go'}
 
 "Better python highlighting
@@ -74,7 +76,7 @@ Plug 'tpope/vim-fugitive'
 "Always in root directory
 Plug 'airblade/vim-rooter'
 
-" Surround 
+" Surround
 Plug 'tpope/vim-surround'
 
 "More text targets
@@ -98,13 +100,20 @@ Plug 'bkad/camelcasemotion'
 "Better white space
 Plug 'ntpeters/vim-better-whitespace'
 
+"Ansible syntax
+Plug 'pearofducks/ansible-vim'
 
-"Action menu 
+"Better commeting
+Plug 'preservim/nerdcommenter'
+
+"Action menu
 if has('nvim')
   Plug 'kizza/actionmenu.nvim'
 endif
 
 "Register view
 Plug 'junegunn/vim-peekaboo'
+
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 call plug#end()

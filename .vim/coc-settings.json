@@ -32,7 +32,7 @@
 	"suggest.echodocSupport": true,
 
 	"yaml.format.enable": true,
-	
+
 	"tsserver.enableJavascript": true,
 
 	"eslint.autoFixOnSave": true,
@@ -84,7 +84,7 @@
 						"-isystem",
 						"/Applications/Development/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1",
 						"-I",
-						"/Applications/Development/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/"        
+						"/Applications/Development/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/"
 					]
 				}
 			}
