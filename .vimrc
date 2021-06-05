@@ -1,9 +1,9 @@
-
 set nocompatible
 syntax on
 set encoding=UTF-8
 set backspace=indent,eol,start
 set cursorline
+set cursorcolumn
 set noshowmode
 set background=dark
 set rnu
@@ -33,9 +33,6 @@ if has('nvim')
     set wildoptions+=pum
 endif
 
-
-"set shellcmdflag=-ic
-
 "Faster escape sequence
 augroup FastEscape
     autocmd!
@@ -49,7 +46,6 @@ set updatetime=100
 
 "Leader key remap
 let mapleader=","
-
 
 "Plugins source for vim, uses VimPlug
 source ~/.vim/plugins.vim
@@ -90,11 +86,6 @@ autocmd FileType yaml,yml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# inde
 "Used only by c so not in themes
 highlight ColorColumn ctermbg=Black ctermfg=DarkRed
 
-"Custom ctrlp ignores
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|__pycache__\|dist\|public'
-let g:ctrlp_use_caching = 0
-let g:ctrlp_cmd='CtrlP :pwd'
-
 let g:fzf_buffers_jump = 1
 let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
 let g:fzf_tags_command = 'ctags -R'
@@ -110,7 +101,6 @@ let g:netrw_banner = 0
 let g:netrw_winsize = 25
 let g:netrw_liststyle = 3
 
-
 "Clang auto detect style file for kernel style file
 let g:clang_format#detect_style_file = 1
 
@@ -118,7 +108,7 @@ let g:clang_format#detect_style_file = 1
 let g:localvimrc_reverse=1
 let g:localvimrc_persistent=1
 
-"Tagbar settings
+"Vista configuration
 let g:vista_sidebar_width=60
 let g:vista#renderer#enable_icon = 1
 let g:vista_cursor_delay = 50
@@ -133,8 +123,10 @@ let g:vista_executive_for = {
             \ 'go': 'coc',
             \ }
 
+"Vue plugin to always think that we use typescript and use tslint
 let g:vim_vue_plugin_use_typescript = 1
 
+"Better whitespace configuration
 let g:better_whitespace_enabled=1
 let g:strip_whitespace_on_save=1
 

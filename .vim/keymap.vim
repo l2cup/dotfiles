@@ -1,5 +1,4 @@
 "Buffer keymappings
-
 noremap <Tab> :bnext<CR>
 noremap <S-Tab> :bprevious<CR>
 noremap <Leader><Tab> :bdelete!<CR>
@@ -46,7 +45,6 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nn <silent> K :call CocActionAsync('doHover')<cr>
 
-autocmd CursorHold * silent call CocActionAsync('highlight')
 let g:coc_snippet_next = '<tab>'
 
 nmap <silent> <C-p> :Files<CR>
@@ -65,7 +63,6 @@ map <right> <nop>
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 
 "Javascript specific keymaps
-"
 autocmd Filetype javascript,vue,typescript nmap <leader>o :CocCommand eslint.executeAutofix<CR>
 
 "Python specific keymaps
@@ -78,43 +75,6 @@ nmap <Leader>f :Lex<CR>
 
 "Toggle lopen keymap
 nmap <script> <silent> <leader>l :call ToggleLocationList()<CR>
-
-"<S-k> documentation scroll. Works in normal mode.
-"TODO Allow no mouse scrolling in insert mode documentation.
-function FindCursorPopUp()
-    let radius = get(a:000, 0, 2)
-    let srow = screenrow()
-    let scol = screencol()
-    " it's necessary to test entire rect, as some popup might be quite small
-    for r in range(srow - radius, srow + radius)
-        for c in range(scol - radius, scol + radius)
-            let winid = popup_locate(r, c)
-            if winid != 0
-                return winid
-            endif
-        endfor
-    endfor
-
-    return 0
-endfunction
-
-function ScrollPopUp(down)
-    let winid = FindCursorPopUp()
-    if winid == 0
-        return 0
-    endif
-
-    let pp = popup_getpos(winid)
-    call popup_setoptions( winid,
-                \ {'firstline' : pp.firstline + ( a:down ? 1 : -1 ) } )
-
-    return 1
-endfunction
-
-if !has('nvim')
-    nnoremap <expr> <c-d> ScrollPopUp(1) ? '<esc>' : '<c-d>'
-    nnoremap <expr> <c-u> ScrollPopUp(0) ? '<esc>' : '<c-u>'
-endif
 
 "Fugitive Keymapings
 nmap <Leader>gs :Gstatus<CR>

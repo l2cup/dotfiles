@@ -31,3 +31,4 @@ func! ActionMenuCodeActionsCallback(index, item) abort
 endfunc
 
 nnoremap <silent> <Leader>1 :call ActionMenuCodeActions()<CR>
+autocmd CursorHold * silent call CocActionAsync('highlight')

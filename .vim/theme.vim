@@ -125,8 +125,6 @@ let g:gruvbox_italic=1
 "let g:nord_italic_comments = 1
 "let g:nord_cursor_line_number_background = 1
 
-"let g:neodark#background = '#202020'
-
 "Actual theme for vim
 colorscheme gruvbox
 
@@ -135,7 +133,6 @@ hi CursorLineNr term=bold cterm=bold ctermfg=012 gui=bold
 
 set list
 set listchars=tab:\┊\ ,
-
 
 "Airline theme source
 source ~/.vim/theme.airline.vim

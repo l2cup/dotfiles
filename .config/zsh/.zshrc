@@ -1,4 +1,4 @@
-eval "`fnm env --multi`"
+eval "`fnm env`"
 
 # Theme
 source $HOME/.config/zsh/.theme.zsh

@@ -1,7 +1,5 @@
 "Themeing for airline
 
-"let g:airline_theme='gruvbox'
-
 "Airline symbol checking
 if !exists('g:airline_symbols')
  let g:airline_symbols = {}

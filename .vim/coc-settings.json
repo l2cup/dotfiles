@@ -1,4 +1,29 @@
 {
+
+	/* Coc general settings */
+	"snippets.priority": 1000,
+	"coc.source.gocode.enable": false,
+	"coc.preferences.previewAutoClose": true,
+	"coc.preferences.formatOnSaveFiletypes": ["python"],
+	"coc.preferences.colorSupport": true,
+	"coc.preferences.formatOnType": true,
+	"coc.preferences.enableFloatHighlight": true,
+	"suggest.acceptSuggestionOnCommitCharacter": true,
+	"suggest.minTriggerInputLength": 1,
+	"suggest.snippetIndicator": " ►",
+	"suggest.floatEnable": true,
+	"coc.preferences.hoverTarget": "float",
+	"suggest.detailField":"abbr",
+	"suggest.enablePreview": true,
+	"suggest.echodocSupport": true,
+	"coc.preferences.rootPatterns": [
+		"tsconfig.json",
+		".git",
+		".hg",
+		".projections.json"
+	],
+
+	/* Python configuration */
 	"python.jediEnabled": false,
 	"python.linting.enabled": true,
 	"python.formatting.provider": "black",
@@ -10,31 +35,15 @@
 	],
 	"python.venvPath": "./applications/.pyenv",
 
-
-
-	"snippets.priority": 1000,
-	"coc.source.gocode.enable": false,
-	"coc.preferences.previewAutoClose": true,
-	"coc.preferences.formatOnSaveFiletypes": ["python"],
-	"coc.preferences.colorSupport": true,
-	"coc.preferences.formatOnType": true,
-	"coc.preferences.enableFloatHighlight": true,
-	"pairs.disableLanguages": ["golang","go"],
-
-
-	"suggest.acceptSuggestionOnCommitCharacter": true,
-	"suggest.minTriggerInputLength": 1,
-	"suggest.snippetIndicator": " ►",
-	"suggest.floatEnable": true,
-	"coc.preferences.hoverTarget": "float",
-	"suggest.detailField":"abbr",
-	"suggest.enablePreview": true,
-	"suggest.echodocSupport": true,
-
+	/* Random preferences */
 	"yaml.format.enable": true,
+	"pairs.disableLanguages": ["golang","go"],
+	"tsserver.npm": "/usr/local/bin/npm",
+	"javascript.validate.enable": false,
 
+
+	/* Javascript and Typescript */
 	"tsserver.enableJavascript": true,
-
 	"eslint.autoFixOnSave": true,
 	"eslint.packageManager": "yarn",
 	"eslint.filetypes": [
@@ -45,22 +54,14 @@
 		"typescriptreact",
 
 	],
-	"coc.preferences.rootPatterns": [
-		"tsconfig.json",
-		".git",
-		".hg",
-		".projections.json"
-	],
-
 	"html.filetypes": [
 		"html",
 		"handlebars",
 		"htmldjango"
 	],
 
-	"tsserver.npm": "/usr/local/bin/npm",
-	"javascript.validate.enable": false,
 
+	/* Language servers */
 	"languageserver": {
 		"golang": {
 			"command": "gopls",

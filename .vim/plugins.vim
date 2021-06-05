@@ -9,10 +9,9 @@ Plug 'vim-airline/vim-airline'
 "Theme plugins
 Plug 'vim-airline/vim-airline-themes'
 
+" Themes
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
-Plug 'sonph/onehalf', {'rtp': 'vim'}
-Plug 'KeitaNakamura/neodark.vim'
 
 "Icons for airline
 Plug 'ryanoasis/vim-devicons'
@@ -36,9 +35,7 @@ Plug 'tweekmonster/django-plus.vim'
 "Css color
 Plug 'ap/vim-css-color'
 
-"Ctrl-P for GoDecl
-"Plug 'ctrlpvim/ctrlp.vim'
-
+"Fzf, better ctrlp
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
@@ -69,9 +66,6 @@ Plug 'beyondmarc/opengl.vim'
 
 "Git plugin
 Plug 'tpope/vim-fugitive'
-
-"Local .vimrc for different project rules
-"Plug 'embear/vim-localvimrc'
 
 "Always in root directory
 Plug 'airblade/vim-rooter'
@@ -106,6 +100,7 @@ Plug 'pearofducks/ansible-vim'
 "Better commeting
 Plug 'preservim/nerdcommenter'
 
+
 "Action menu
 if has('nvim')
   Plug 'kizza/actionmenu.nvim'
@@ -114,6 +109,17 @@ endif
 "Register view
 Plug 'junegunn/vim-peekaboo'
 
+"Markdown preview
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+
+
+"Local .vimrc for different project rules
+"Plug 'embear/vim-localvimrc'
+
+"Git gutter
+"Plug 'airblade/vim-gitgutter'
+
+"Vim chords
+"Plug 'kana/vim-arpeggio'
 
 call plug#end()

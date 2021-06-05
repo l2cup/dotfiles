@@ -8,6 +8,7 @@ typeset -g POWERLEVEL9K_MODE="nerdfont-complete"
 
 #Newline after every prompt
 typeset -g POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=verbose
 
 #Transparent background and whitespace settings
 typeset -g POWERLEVEL9K_BACKGROUND=
