@@ -104,10 +104,13 @@ augroup gruvbox-theme-overrides
 	autocmd Filetype typescript highlight PreProc ctermfg=0 guifg=#EBDBB2
 	autocmd ColorScheme gruvbox highlight typescriptLabel ctermfg=0 guifg=#EBDBB2
 
-
 	autocmd ColorScheme gruvbox highlight CocErrorSign ctermbg=235 guibg=#282828 ctermfg=167 guifg=#fb4934
 	autocmd ColorScheme gruvbox highlight CocInfoSign ctermbg=235 guibg=#282828 ctermfg=214 guifg=#fabd2f
 	autocmd ColorScheme gruvbox highlight CocWarningSign ctermbg=235 guibg=#282828 ctermfg=208 guifg=#fe8019
+
+	autocmd ColorScheme gruvbox highlight ALEErrorSign ctermbg=235 guibg=#282828 ctermfg=167 guifg=#fb4934
+	autocmd ColorScheme gruvbox highlight ALEWarningSign ctermbg=235 guibg=#282828 ctermfg=208 guifg=#fe8019
+
 	autocmd ColorScheme gruvbox highlight SignColumn guibg=#282828
 	autocmd ColorScheme gruvbox highlight ExtraWhitespace ctermbg=235 guibg=#282828 ctermfg=167 guifg=#fb4934
 
@@ -118,6 +121,9 @@ augroup END
 let g:gruvbox_invert_selection=0
 let g:gruvbox_contrast_dark="medium"
 let g:gruvbox_italic=1
+highlight clear ALEErrorSign
+highlight clear ALEWarningSign
+
 
 " Nord
 "let g:nord_underline=1

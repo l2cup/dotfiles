@@ -1,10 +1,10 @@
 {
 
 	/* Coc general settings */
+	"diagnostic.displayByAle": true,
 	"snippets.priority": 1000,
 	"coc.source.gocode.enable": false,
 	"coc.preferences.previewAutoClose": true,
-	"coc.preferences.formatOnSaveFiletypes": ["python"],
 	"coc.preferences.colorSupport": true,
 	"coc.preferences.formatOnType": true,
 	"coc.preferences.enableFloatHighlight": true,
@@ -24,6 +24,7 @@
 	],
 
 	/* Python configuration */
+	"coc.preferences.formatOnSaveFiletypes": ["python"],
 	"python.jediEnabled": false,
 	"python.linting.enabled": true,
 	"python.formatting.provider": "black",
@@ -69,6 +70,7 @@
 			"rootPatterns": ["go.mod", ".git"],
 			"filetypes": ["go"],
 			"initializationOptions": {
+				"usePlaceholders": true
 			}
 		},
 		"ccls": {

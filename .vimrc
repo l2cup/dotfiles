@@ -19,7 +19,7 @@ set ttyfast
 set undodir=~/.vim/undo-dir
 set undofile
 set nuw=3
-set scrolloff=7
+"set scrolloff=7
 set showmatch
 set diffopt+=context:2,iwhite
 set wildmenu
@@ -46,6 +46,28 @@ set updatetime=100
 
 "Leader key remap
 let mapleader=","
+
+let g:ale_disable_lsp = 1
+let g:ale_sign_warning = '⚠'
+let g:ale_echo_cursor = 0
+let g:ale_set_highlights = 1
+let g:ale_echo_msg_error_str = 'Error'
+let g:ale_echo_msg_warning_str = 'Warn'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_floating_preview = 1
+let g:ale_hover_to_floating_preview = 1
+let g:ale_cursor_detail = 1
+let g:ale_hover_cursor = 1
+let g:ale_close_preview_on_insert = 1
+let g:ale_floating_window_border = []
+let g:ale_linters = {
+\   'go': ['revive'],
+\}
+let g:ale_go_revive_options = '-formatter unix'
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_save = 1
 
 "Plugins source for vim, uses VimPlug
 source ~/.vim/plugins.vim

@@ -16,6 +16,9 @@ Plug 'morhetz/gruvbox'
 "Icons for airline
 Plug 'ryanoasis/vim-devicons'
 
+"Ale
+Plug 'dense-analysis/ale'
+
 "Autocompletion tools
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
