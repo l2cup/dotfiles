@@ -22,7 +22,7 @@ export NUGET_PACKAGES="$HOME/.applications/.nuget/packages"
 export NODE_REPL_HISTORY=""
 export LESSHISTFILE=-
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-gpgconf --launch gpg-agent --pinentry-program /usr/local/bin/pinentry
+#gpgconf --launch gpg-agent
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export MCFLY_KEY_SCHEME=vim

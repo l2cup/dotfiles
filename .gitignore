@@ -28,6 +28,7 @@
 !.config/bat
 !.config/alacritty
 !.config/.oh-my-zsh
+.config/.oh-my-zsh/lib/unused
 
 !.scripts/
 

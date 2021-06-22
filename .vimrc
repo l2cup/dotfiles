@@ -62,12 +62,17 @@ let g:ale_close_preview_on_insert = 1
 let g:ale_floating_window_border = []
 let g:ale_linters = {
 \   'go': ['revive'],
+\   'proto': ['protolint'],
 \}
-let g:ale_go_revive_options = '-formatter unix'
+let g:ale_go_revive_options = '-formatter unix -config revive.toml'
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_insert_leave = 0
-let g:ale_lint_on_enter = 0
+let g:ale_lint_on_enter = 1
 let g:ale_lint_on_save = 1
+let g:ale_fixers = {
+\   'proto': ['ale#fixers#protolint#Fix'],
+\}
+let g:ale_fix_on_save = 1
 
 "Plugins source for vim, uses VimPlug
 source ~/.vim/plugins.vim
@@ -94,7 +99,7 @@ set softtabstop=4
 set shiftwidth=4
 
 "Javascript custom indendation where tab = 2 spaces for the Airbnb style guide
-"autocmd FileType javascript,vue,html,typescript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType javascript,vue,html,typescript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
 
 "C custom indentation to comply to linux kernel rules and clang auto format
@@ -104,6 +109,10 @@ autocmd Filetype c,cpp,objc nmap <Leader>o :ClangFormat<CR>
 
 "Yaml cusotm indentation
 autocmd FileType yaml,yml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=0# indentkeys-=<:> foldmethod=indent nofoldenable
+
+"Proto custom indentation
+autocmd BufRead,BufNewFile *.proto set filetype=proto
+autocmd FileType proto setlocal ts=2 sts=2 sw=2 expandtab
 
 "Used only by c so not in themes
 highlight ColorColumn ctermbg=Black ctermfg=DarkRed

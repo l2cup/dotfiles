@@ -45,7 +45,7 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nn <silent> K :call CocActionAsync('doHover')<cr>
 
-let g:coc_snippet_next = '<tab>'
+"let g:coc_snippet_next = '<tab>'
 
 nmap <silent> <C-p> :Files<CR>
 

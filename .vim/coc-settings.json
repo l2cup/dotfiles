@@ -6,13 +6,12 @@
 	"coc.source.gocode.enable": false,
 	"coc.preferences.previewAutoClose": true,
 	"coc.preferences.colorSupport": true,
-	"coc.preferences.formatOnType": true,
+	//"coc.preferences.formatOnType": true,
 	"coc.preferences.enableFloatHighlight": true,
 	"suggest.acceptSuggestionOnCommitCharacter": true,
 	"suggest.minTriggerInputLength": 1,
 	"suggest.snippetIndicator": " ►",
 	"suggest.floatEnable": true,
-	"coc.preferences.hoverTarget": "float",
 	"suggest.detailField":"abbr",
 	"suggest.enablePreview": true,
 	"suggest.echodocSupport": true,
@@ -70,7 +69,7 @@
 			"rootPatterns": ["go.mod", ".git"],
 			"filetypes": ["go"],
 			"initializationOptions": {
-				"usePlaceholders": true
+				//"usePlaceholders": true
 			}
 		},
 		"ccls": {

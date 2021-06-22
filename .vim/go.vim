@@ -8,7 +8,8 @@ let g:go_highlight_space_tab_error = 0
 
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
-let g:go_gopls_use_placeholders= 1
+let g:go_fillstruct_mode = 'gopls'
+"let g:go_gopls_use_placeholders= 1
 
 let g:go_echo_go_info = 0
 let g:go_doc_popup_window = 1

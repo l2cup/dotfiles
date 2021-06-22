@@ -1,4 +1,5 @@
 eval "`fnm env`"
+autoload -Uz is-at-least
 
 # Theme
 source $HOME/.config/zsh/.theme.zsh
@@ -6,13 +7,9 @@ source $HOME/.config/zsh/.icons.zsh
 
 # Autocorret async usage enable
 typeset -g ZSH_AUTOSUGGEST_USE_ASYNC=1
-
 typeset -g ZSH_DISABLE_COMPFIX=true
-# Faster key timeouts
 typeset -g KEYTIMEOUT=1
-
 typeset -g DISABLE_AUTO_UPDATE=true
-
 typeset -g DISABLE_MAGIC_FUNCTIONS=true
 
 plugins=(
@@ -25,7 +22,6 @@ plugins=(
  zsh-syntax-highlighting
  zsh-autosuggestions
  vi-mode
- pyenv
  colored-man-pages
 )
 # Aliases
@@ -33,8 +29,6 @@ plugins=(
 #TODO Move the oh-my-zsh leftovers to a custom zsh configuration with a plugin manager
 source $HOME/.config/zsh/.theme.zsh
 source $ZSH/oh-my-zsh.sh
-
-eval $(gdircolors ~/.dir_colors)
 
 source $HOME/.config/zsh/.alias.zsh
 source $HOME/.config/zsh/zsh-autoenv/autoenv.zsh
@@ -50,8 +44,15 @@ if [ -n "${NVIM_LISTEN_ADDRESS+x}" ]; then
   export COLORTERM="truecolor"
 fi
 
-if [[ -r "/usr/local/opt/mcfly/mcfly.zsh" ]]; then
-  source "/usr/local/opt/mcfly/mcfly.zsh"
-fi
+setopt long_list_jobs
 
-eval "$(mcfly init zsh)"
+env_default 'PAGER' 'less'
+env_default 'LESS' '-R'
+
+#if [[ -r "/usr/local/opt/mcfly/mcfly.zsh" ]]; then
+  #source "/usr/local/opt/mcfly/mcfly.zsh"
+#fi
+
+#eval "$(mcfly init zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

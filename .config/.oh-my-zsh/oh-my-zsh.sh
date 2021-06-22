@@ -37,7 +37,7 @@ done
 
 # Figure out the SHORT hostname
 # macOS's $HOST changes with dhcp, etc. Use ComputerName if possible.
-SHORT_HOST=$(scutil --get ComputerName 2>/dev/null) || SHORT_HOST=${HOST/.*/}
+#SHORT_HOST=$(scutil --get ComputerName 2>/dev/null) || SHORT_HOST=${HOST/.*/}
 
 # Save the location of the current completion dump file.
 if [ -z "$ZSH_COMPDUMP" ]; then

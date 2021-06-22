@@ -12,6 +12,7 @@ Plug 'vim-airline/vim-airline-themes'
 " Themes
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
+Plug 'cocopon/iceberg.vim'
 
 "Icons for airline
 Plug 'ryanoasis/vim-devicons'
